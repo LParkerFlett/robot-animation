@@ -5,6 +5,12 @@ body {
 h1 {
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
+	transition: 1s ease-in-out;
+	color: #453791;
+}
+
+h1:hover {
+	transform: skewX(-20deg);
 }
 
 .robots {
@@ -33,6 +39,11 @@ h1 {
 	display: flex;
 }
 
+.eyes:hover {
+	width: 40px;
+	transition: 1s ease-in-out;
+}
+
 .head:hover {
 	width: 300px;
     transition: 1s ease-in-out;
@@ -48,7 +59,12 @@ h1 {
 	width: 40px; 
 	height: 125px;
 	border-radius: 100px; 
+	transition: 0.5s ease-in-out;
 } 
+
+.left_arm:hover, .right_arm:hover {
+	transform: scale(1.2);
+}
 
 .left_arm { 
 	margin-right: 10px; 
@@ -62,14 +78,19 @@ h1 {
 	width: 200px; 
 	height: 200px;
 	border-radius: 0 0 50px 50px; 
+	transition: 0.5s ease-in-out;
 } 
+
+.torso:hover {
+	transform: scale(1.04);
+}
 
 .lower_body { 
 	width: 200px; 
 	height: 200px;
 	/* This is another useful property. Hmm what do you think it does?*/
 	margin: 0 auto;
-
+	display: flex;
 } 
 
 .left_leg, .right_leg { 
@@ -94,12 +115,26 @@ h1 {
 	margin-left: 30px; 
 }
 
+.right_leg:hover {
+	-webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+}
+
 .left_eye, .right_eye { 
 	width: 20px; 
 	height: 20px; 
-	border-radius: 15px; 
-	background-color: white;  
+	border-radius: 7px; 
+	background-color: white; 
+	transition: transform 0.5s ease-in-out;
 } 
+
+.left_eye:hover, .right_eye:hover {
+	transform: rotate(360deg);
+	background-color: #eeee52;
+}
 
 .left_eye { 
 	/* These properties are new and you haven't encountered
