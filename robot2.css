@@ -1,0 +1,162 @@
+body {
+	background-color: white;
+}
+
+.android {
+    border: 2px dashed pink;
+    transition: margin-top 1s;
+}
+
+.android:hover {
+    margin-top: -40px;
+}
+
+h1 {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	transition: 1s ease-in-out;
+	color: rgb(174, 35, 81);
+}
+
+h1:hover {
+	transform: skewX(-20deg);
+}
+
+.robots {
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+}
+
+.head, 
+.left_arm, 
+.torso, 
+.right_arm, 
+.left_leg, 
+.right_leg {
+	 background-color: #403075;
+}
+
+.head { 
+	width: 200px; 
+	margin: 0 auto; 
+	height: 150px; 
+	border-radius: 200px 200px 0 0; 
+	margin-bottom: 10px;
+} 
+
+.eyes {
+	display: flex;
+}
+
+.head:hover {
+	width: 300px;
+    transition: 1s ease-in-out;
+}
+
+.upper_body { 
+	width: 300px; 
+	height: 150px;
+	display: flex;
+} 
+
+.left_arm, .right_arm { 
+	width: 40px; 
+	height: 125px;
+	border-radius: 100px; 
+} 
+
+.left_arm { 
+	margin-right: 10px;
+    transition: 1s;
+    transform-origin: top right;
+} 
+
+.android:hover .left_arm {
+    transform: rotate(120deg);
+    transform-origin: top right;
+    height: 150px;
+}
+
+.right_arm { 
+	margin-left: 10px;
+    transition: 1s;
+    transform-origin: top left; 
+} 
+
+.android:hover .right_arm {
+    transform: rotate(-120deg);
+    transform-origin: top left;
+    height: 150px;
+}
+
+.torso { 
+	width: 200px; 
+	height: 200px;
+	border-radius: 0 0 50px 50px; 
+	transition: 0.5s ease-in-out;
+} 
+
+.torso:hover {
+	transform: scale(1.04);
+}
+
+.lower_body { 
+	width: 200px; 
+	height: 200px;
+	margin: 0 auto;
+	display: flex;
+} 
+
+.left_leg, .right_leg { 
+	width: 40px; 
+	height: 120px;
+	border-radius: 0 0 100px 100px; 
+} 
+
+.left_leg { 
+	margin-left: 30px;
+    transition: 1s; 
+    transform-origin: top right;
+} 
+
+.android:hover .left_leg {
+    transform: rotate(60deg);
+    height: 200px;
+}
+
+.right_leg { 
+	margin-left: 60px;
+    transition: 1s;
+    transform-origin: top left; 
+}
+
+.android:hover .right_leg {
+    transform: rotate(-60deg);
+    height: 200px;
+}
+
+.left_eye, .right_eye { 
+	width: 20px; 
+	height: 20px; 
+	border-radius: 7px; 
+	background-color: white; 
+	transition: transform 0.5s ease-in-out;
+} 
+
+.left_eye:hover, .right_eye:hover {
+	transform: rotate(360deg);
+	background-color: #eeee52;
+}
+
+.left_eye { 
+	position: relative; 
+	top: 100px; 
+	left: 40px; 
+} 
+
+.right_eye { 
+	position: relative;
+	top: 100px; 
+	left: 120px; 
+}
